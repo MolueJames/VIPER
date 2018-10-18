@@ -10,6 +10,10 @@
 		1A7263BA217887AB00876861 /* Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7263B0217887AB00876861 /* Architecture.framework */; };
 		1A7263BF217887AB00876861 /* ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7263BE217887AB00876861 /* ArchitectureTests.swift */; };
 		1A7263C1217887AB00876861 /* Architecture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7263B3217887AB00876861 /* Architecture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A7263CE217887C700876861 /* MolueViewableRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7263CA217887C700876861 /* MolueViewableRouting.swift */; };
+		1A7263CF217887C700876861 /* MoluePresenterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7263CB217887C700876861 /* MoluePresenterInteractor.swift */; };
+		1A7263D0217887C700876861 /* MolueComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7263CC217887C700876861 /* MolueComponentBuilder.swift */; };
+		1A7263D1217887C700876861 /* MolueBuilderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7263CD217887C700876861 /* MolueBuilderFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		1A7263B9217887AB00876861 /* ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7263BE217887AB00876861 /* ArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureTests.swift; sourceTree = "<group>"; };
 		1A7263C0217887AB00876861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7263CA217887C700876861 /* MolueViewableRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MolueViewableRouting.swift; sourceTree = "<group>"; };
+		1A7263CB217887C700876861 /* MoluePresenterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoluePresenterInteractor.swift; sourceTree = "<group>"; };
+		1A7263CC217887C700876861 /* MolueComponentBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MolueComponentBuilder.swift; sourceTree = "<group>"; };
+		1A7263CD217887C700876861 /* MolueBuilderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MolueBuilderFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				1A7263B3217887AB00876861 /* Architecture.h */,
+				1A7263CD217887C700876861 /* MolueBuilderFactory.swift */,
+				1A7263CC217887C700876861 /* MolueComponentBuilder.swift */,
+				1A7263CB217887C700876861 /* MoluePresenterInteractor.swift */,
+				1A7263CA217887C700876861 /* MolueViewableRouting.swift */,
 				1A7263B4217887AB00876861 /* Info.plist */,
 			);
 			path = Architecture;
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					1A7263AF217887AB00876861 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					1A7263B8217887AB00876861 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7263CF217887C700876861 /* MoluePresenterInteractor.swift in Sources */,
+				1A7263D1217887C700876861 /* MolueBuilderFactory.swift in Sources */,
+				1A7263CE217887C700876861 /* MolueViewableRouting.swift in Sources */,
+				1A7263D0217887C700876861 /* MolueComponentBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +356,7 @@
 		1A7263C5217887AB00876861 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = James.Architecture;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +382,7 @@
 		1A7263C6217887AB00876861 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -387,6 +407,7 @@
 		1A7263C8217887AB00876861 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArchitectureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +425,7 @@
 		1A7263C9217887AB00876861 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ArchitectureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
