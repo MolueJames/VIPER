@@ -13,6 +13,6 @@ public protocol MolueViewableRouting: class {
     
     init(interactor: Interactable, controller: Controllerable)
     
-    var interactor: Interactable? {get set}
-    var controller: Controllerable? {get set}
+    var interactor: Interactable { get }
+    var controller: Controllerable { get }
 }

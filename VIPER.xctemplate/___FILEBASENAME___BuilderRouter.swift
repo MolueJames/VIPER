@@ -13,9 +13,9 @@ protocol ___VARIABLE_productName___ViewControllable: class {
 
 final class ___VARIABLE_productName___ViewableRouter: MolueViewableRouting {
     
-    weak var interactor: ___VARIABLE_productName___RouterInteractable?
+    unowned var interactor: ___VARIABLE_productName___RouterInteractable
     
-    weak var controller: ___VARIABLE_productName___ViewControllable?
+    unowned var controller: ___VARIABLE_productName___ViewControllable
     
     @discardableResult
     required init(interactor: ___VARIABLE_productName___RouterInteractable, controller: ___VARIABLE_productName___ViewControllable) {

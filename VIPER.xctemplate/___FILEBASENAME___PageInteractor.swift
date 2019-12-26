@@ -13,7 +13,7 @@ protocol ___VARIABLE_productName___PagePresentable: MolueInteractorPresentable {
 
 final class ___VARIABLE_productName___PageInteractor: MoluePresenterInteractable {
     
-    weak var presenter: ___VARIABLE_productName___PagePresentable?
+    unowned var presenter: ___VARIABLE_productName___PagePresentable
     
     var viewRouter: ___VARIABLE_productName___ViewableRouting?
     

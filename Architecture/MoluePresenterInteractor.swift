@@ -15,6 +15,6 @@ public protocol MoluePresenterInteractable: class {
     
     init(presenter: Presentable)
     
-    var presenter: Presentable? {get set}
+    var presenter: Presentable { get }
 }
 

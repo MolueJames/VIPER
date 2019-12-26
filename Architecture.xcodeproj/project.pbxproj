@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2115C823B4B208005564B6 /* MolueViewableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2115C723B4B208005564B6 /* MolueViewableInteractor.swift */; };
 		1A7263BA217887AB00876861 /* Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7263B0217887AB00876861 /* Architecture.framework */; };
 		1A7263BF217887AB00876861 /* ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7263BE217887AB00876861 /* ArchitectureTests.swift */; };
 		1A7263C1217887AB00876861 /* Architecture.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7263B3217887AB00876861 /* Architecture.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A2115C723B4B208005564B6 /* MolueViewableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolueViewableInteractor.swift; sourceTree = "<group>"; };
 		1A7263B0217887AB00876861 /* Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7263B3217887AB00876861 /* Architecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Architecture.h; sourceTree = "<group>"; };
 		1A7263B4217887AB00876861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				1A7263CD217887C700876861 /* MolueBuilderFactory.swift */,
 				1A7263CC217887C700876861 /* MolueComponentBuilder.swift */,
 				1A7263CB217887C700876861 /* MoluePresenterInteractor.swift */,
+				1A2115C723B4B208005564B6 /* MolueViewableInteractor.swift */,
 				1A7263CA217887C700876861 /* MolueViewableRouting.swift */,
 				1A7263B4217887AB00876861 /* Info.plist */,
 			);
@@ -209,6 +212,7 @@
 			files = (
 				1A7263CF217887C700876861 /* MoluePresenterInteractor.swift in Sources */,
 				1A7263D1217887C700876861 /* MolueBuilderFactory.swift in Sources */,
+				1A2115C823B4B208005564B6 /* MolueViewableInteractor.swift in Sources */,
 				1A7263CE217887C700876861 /* MolueViewableRouting.swift in Sources */,
 				1A7263D0217887C700876861 /* MolueComponentBuilder.swift in Sources */,
 			);
