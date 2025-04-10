@@ -23,3 +23,5 @@ E (Entity)	定义模块内部的数据模型（如 Data 类）。
 R (Router)	管理导航和依赖注入，负责模块间的跳转和生命周期管理。
 
 L (Listener) 完成两个VIPER之间的数据交互。
+
+提供了Xctemplate模版，支持快速使用。
